@@ -1,16 +1,19 @@
+import SideDrawer from "./SideDrawer";
 import TopBar from "./TopBar";
 import SideBar from "./sidebar";
-import { Flex, Box, Container } from "@chakra-ui/react";
+import { Flex, Box, Container, useDisclosure } from "@chakra-ui/react";
 function DashBoardLayout({ title, children }) {
+  const { isOpen, onClose, onOpen } = useDisclosure();
   return (
     <>
       <Flex>
-        <Box>
+        <Box display={{ base: "none", lg: "flex" }}>
           <SideBar />
         </Box>
+        <SideDrawer isOpen={isOpen} onClose={onClose} />
         <Box flexGrow={1}>
-          <TopBar title={title} />
-          <Container h=" calc(100% - 64px)" maxW="70rem" bg="#f6f4fa">
+          <TopBar title={title} onOpen={onOpen} />
+          <Container h=" calc(100vh - 64px)" maxW="70rem" bg="#f6f4fa">
             {children}
           </Container>
         </Box>

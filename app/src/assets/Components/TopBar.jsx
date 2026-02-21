@@ -8,12 +8,23 @@ import {
   MenuList,
   MenuItem,
 } from "@chakra-ui/react";
-import { IoPerson } from "react-icons/io5";
 
-function TopBar({ title }) {
+import { IoPerson } from "react-icons/io5";
+import { FaBars } from "react-icons/fa";
+
+function TopBar({ title, onOpen }) {
   return (
     <Box h="16" w="100%" bg="White" color="Black">
       <HStack justifyContent="space-between" h="16" px="8" align="center">
+        <Icon
+          as={FaBars}
+          onClick={onOpen}
+          display={{
+            base: "block",
+            lg: "none",
+            md: "block",
+          }}
+        />
         <Heading as="h1" fontSize="28px">
           {title}
         </Heading>
