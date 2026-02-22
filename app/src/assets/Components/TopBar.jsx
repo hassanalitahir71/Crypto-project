@@ -15,7 +15,13 @@ import { FaBars } from "react-icons/fa";
 function TopBar({ title, onOpen }) {
   return (
     <Box h="16" w="100%" bg="White" color="Black">
-      <HStack justifyContent="space-between" h="16" px="8" align="center">
+      <HStack
+        justifyContent="space-between"
+        h="16"
+        px="8"
+        mx={{ base: "11px", lg: "112px", md: "11px" }}
+        align="center"
+      >
         <Icon
           as={FaBars}
           onClick={onOpen}
