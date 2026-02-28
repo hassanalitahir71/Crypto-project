@@ -125,7 +125,7 @@ const PriceSetion = () => {
             <Flex>
               <TabPanels>
                 <TabPanel>
-                  <Img w="100%" src="\Graph.png" mt="3rem" />
+                  <Img w="100%" src="\Graph.png" mt="4rem" />
                   <HStack justify="space-between">
                     {timestamps.map((timestamp) => (
                       <Text key={timestamp} fontSize="sm" color="black.80">
@@ -135,7 +135,7 @@ const PriceSetion = () => {
                   </HStack>
                 </TabPanel>
                 <TabPanel>
-                  <Img w="100%" src="\Graph.png" mt="3rem" />
+                  <Img w="100%" src="\Graph.png" mt="4rem" />
                   <HStack justify="space-between">
                     {daytamps.map((daytamps) => (
                       <Text key={daytamps} fontSize="sm" color="black.80">
@@ -145,7 +145,7 @@ const PriceSetion = () => {
                   </HStack>
                 </TabPanel>
                 <TabPanel>
-                  <Img w="100%" src="\Graph.png" mt="3rem" />
+                  <Img w="100%" src="\Graph.png" mt="4rem" />
                   <HStack justify="space-between">
                     {weaktamps.map((weaktamps) => (
                       <Text key={weaktamps} fontSize="sm" color="black.80">
@@ -155,7 +155,7 @@ const PriceSetion = () => {
                   </HStack>
                 </TabPanel>
                 <TabPanel>
-                  <Img w="100%" src="\Graph.png" mt="3rem" />
+                  <Img w="100%" src="\Graph.png" mt="4rem" />
                   <HStack justify="space-between">
                     {monthtamps.map((monthtamps) => (
                       <Text key={monthtamps} fontSize="sm" color="black.80">

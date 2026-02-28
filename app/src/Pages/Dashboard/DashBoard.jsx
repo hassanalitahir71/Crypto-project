@@ -3,6 +3,7 @@ import DashBoardLayout from "../../assets/Components/DashBoardLayout";
 import PortfolioSection from "./components/PortfolioSection";
 import PriceSetion from "./components/PriceSetion";
 import TransactionSection from "./components/TransactionSection";
+import LoanContactSection from "./components/LoanContactSection";
 function DashBoard() {
   return (
     <>
@@ -22,6 +23,12 @@ function DashBoard() {
             <TransactionSection/>
 
 
+          </GridItem>
+          <GridItem colSpan={1}>
+            <LoanContactSection update={true}/>
+          </GridItem>
+           <GridItem colSpan={1}>
+            <LoanContactSection />
           </GridItem>
         </Grid>
          </Box>
