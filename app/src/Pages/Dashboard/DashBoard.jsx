@@ -2,6 +2,7 @@ import { Box, Center, Grid, GridItem, HStack } from "@chakra-ui/react";
 import DashBoardLayout from "../../assets/Components/DashBoardLayout";
 import PortfolioSection from "./components/PortfolioSection";
 import PriceSetion from "./components/PriceSetion";
+import TransactionSection from "./components/TransactionSection";
 function DashBoard() {
   return (
     <>
@@ -18,7 +19,9 @@ function DashBoard() {
             <PriceSetion/>
           </GridItem>
            <GridItem colSpan={1}>
-            <PriceSetion/>
+            <TransactionSection/>
+
+
           </GridItem>
         </Grid>
          </Box>

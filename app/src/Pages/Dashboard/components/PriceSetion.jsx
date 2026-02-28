@@ -34,7 +34,7 @@ const PriceSetion = () => {
               </Text>
               <HStack gap="1">
                 <Text fontSize="20px" fontWeight="500 ">
-                  22.39401000
+                  ₹ 26,670.25
                 </Text>
                 <HStack
                   mt="4px"
