@@ -13,7 +13,8 @@ function DashBoardLayout({ title, children }) {
         <SideDrawer isOpen={isOpen} onClose={onClose} />
         <Box flexGrow={1}>
           <TopBar title={title} onOpen={onOpen} />
-          <Container h=" calc(100vh - 64px)" maxW="70rem" bg="#f6f4fa">
+          <Container h=" calc(100vh - 64px)" maxW="70rem" pt="24px" overflowX="hidden"
+          overflowY="auto"  bg="#f6f4fa">
             {children}
           </Container>
         </Box>
