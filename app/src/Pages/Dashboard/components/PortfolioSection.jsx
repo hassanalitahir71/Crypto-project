@@ -16,14 +16,14 @@ const PortfolioSection = () => {
     <>
       <HStack
         h="106px"
-        maxW="800px"
+        W="800px"
         gap="105px"
         borderRadius="16px"
         align="Center"
         flex="row"
         bg="white"
       >
-        <Box ml="24px">
+        <Box ml="35px">
           <HStack gap="30px">
             <Stack gap="3">
               <HStack gap="1">
@@ -89,7 +89,7 @@ const PortfolioSection = () => {
             </Stack>
           </HStack>
         </Box>
-        <Box mr="24px" mb="25px">
+        <Box mr="24px"  mb="25px">
           <HStack gap="8px">
             <Button
               bg="#5F00D9"
