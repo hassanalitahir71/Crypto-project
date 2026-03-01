@@ -19,7 +19,7 @@ function TopBar({ title, onOpen }) {
         justifyContent="space-between"
         h="16"
         px="8"
-        mx={{ base: "11px", lg: "112px", md: "11px" }}
+        mx={{ base: "11px", lg: "90px", md: "11px" }}
         align="center"
       >
         <Icon
