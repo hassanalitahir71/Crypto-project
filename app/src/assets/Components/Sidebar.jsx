@@ -1,11 +1,12 @@
 import { Box, Heading, HStack, Icon, Stack, Text } from "@chakra-ui/react";
 import { BiSolidDashboard, BiSupport } from "react-icons/bi";
 import { TbArrowsDoubleNeSw } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   const navItems = [
     { Icon: BiSolidDashboard, Text: "Dashboard", path: "/" },
-    { Icon: TbArrowsDoubleNeSw, Text: "Transaction", path: "/" },
+    { Icon: TbArrowsDoubleNeSw, Text: "Transaction", path: "/transaction" },
   ];
 
   return (
@@ -24,31 +25,32 @@ const SideBar = () => {
         </Heading>
 
         <Box mx="3" mt="6">
-          {navItems.map((item) => (
-            <HStack
-              key={item.Text}
-              gap="4"
-              px="4"
-              py="3"
-              bg=""
-              borderRadius="10px"
-              h="42px"
-              color="Gray"
-              textStyle="md"
-              _hover={{
-                bgColor: "Gray",
-                cursor: "pointer",
-                fontWeight: "medium",
-                color: "Black",
-              }}
-            >
-              <Icon as={item.Icon} />
-              <Text fontSize="14px">{item.Text}</Text>
-            </HStack>
-          ))}
+         {navItems.map((item) => (
+  <Link to={item.path} key={item.Text}>
+    <HStack
+      gap="4"
+      px="4"
+      py="3"
+      borderRadius="10px"
+      h="42px"
+      color="Gray"
+      textStyle="md"
+      _hover={{
+        bgColor: "Gray",
+        cursor: "pointer",
+        fontWeight: "medium",
+        color: "Black",
+      }}
+    >
+      <Icon as={item.Icon} />
+      <Text fontSize="14px">{item.Text}</Text>
+    </HStack>
+  </Link>
+))}
         </Box>
       </Box>
       <Box mx="3" mb="3">
+        <Link to="/support">
         <HStack
           gap="4"
           px="4"
@@ -68,6 +70,7 @@ const SideBar = () => {
           <Icon as={BiSupport} />
           <Text fontSize="14px">Support</Text>
         </HStack>
+        </Link>
       </Box>
     </Stack>
   );
