@@ -1,5 +1,5 @@
 import DashBoardLayout from "../../assets/Components/DashBoardLayout";
-import { Box, Button, HStack, Icon, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, HStack, Icon, Stack, Text, Flex } from "@chakra-ui/react";
 import { MdMail } from "react-icons/md";
 import { BiSolidMessageRounded } from "react-icons/bi";
 import {
@@ -14,9 +14,16 @@ const Support = () => {
   return (
     <>
       <DashBoardLayout title="Support">
-        <Box h="480" w="780px">
+        <Box h="480" w="780px" justifyContent="center" alignItems="center">
           <Stack gap="75px">
-            <HStack gap="24px">
+            <Flex
+              direction={{
+                base: "column",
+                md: "column",
+                lg: "row",
+              }}
+              gap="24px"
+            >
               <Stack h="128px" w="340px" placeSelf="flex-start" gap="8px">
                 <Icon as={MdMail} fontSize="24px" color="#5F00D9" />
                 <Text fontSize="30px" fontWeight="500" color="#171717">
@@ -126,8 +133,16 @@ const Support = () => {
                   </Stack>
                 </Stack>
               </Box>
-            </HStack>
-            <HStack gap="22px" mb="24px">
+            </Flex>
+            <Flex
+              direction={{
+                base: "column",
+                md: "column",
+                lg: "row",
+              }}
+              gap="22px"
+              mb="24px"
+            >
               <Stack h="128px" w="340px" gap="16px">
                 <Icon
                   as={BiSolidMessageRounded}
@@ -170,7 +185,7 @@ const Support = () => {
                   </Text>
                 </Stack>
               </Box>
-            </HStack>
+            </Flex>
           </Stack>
         </Box>
       </DashBoardLayout>

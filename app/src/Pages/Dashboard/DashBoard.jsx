@@ -9,29 +9,48 @@ function DashBoard() {
     <>
       <DashBoardLayout title="Dashboard">
         <Box h="100%" w="800px">
-
-       
-        <Grid templateColumns="repeat(2, 1fr)"  
-      gap={6}>
-          <GridItem colSpan={2}>
-            <PortfolioSection/>
-          </GridItem>
-           <GridItem colSpan={1}>
-            <PriceSetion/>
-          </GridItem>
-           <GridItem colSpan={1}>
-            <TransactionSection/>
-
-
-          </GridItem>
-          <GridItem colSpan={1}>
-            <LoanContactSection update={true}/>
-          </GridItem>
-           <GridItem colSpan={1}>
-            <LoanContactSection />
-          </GridItem>
-        </Grid>
-         </Box>
+          <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+            <GridItem colSpan={2}>
+              <PortfolioSection />
+            </GridItem>
+            <GridItem
+              colSpan={{
+                base: "2",
+                md: "2",
+                lg: "1",
+              }}
+            >
+              <PriceSetion />
+            </GridItem>
+            <GridItem
+              colSpan={{
+                base: "2",
+                md: "2",
+                lg: "1",
+              }}
+            >
+              <TransactionSection />
+            </GridItem>
+            <GridItem
+              colSpan={{
+                base: "2",
+                md: "2",
+                lg: "1",
+              }}
+            >
+              <LoanContactSection update={true} />
+            </GridItem>
+            <GridItem
+              colSpan={{
+                base: "2",
+                md: "2",
+                lg: "1",
+              }}
+            >
+              <LoanContactSection />
+            </GridItem>
+          </Grid>
+        </Box>
       </DashBoardLayout>
     </>
   );
