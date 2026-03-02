@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Center,
+  Flex,
   HStack,
   Icon,
   Stack,
@@ -15,6 +16,7 @@ const PortfolioSection = () => {
   return (
     <>
       <HStack
+
         h="106px"
         W="800px"
         gap="105px"

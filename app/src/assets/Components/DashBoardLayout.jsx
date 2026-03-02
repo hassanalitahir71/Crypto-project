@@ -20,7 +20,7 @@ function DashBoardLayout({ title, children }) {
             overflowX="hidden"
             display="flex"
             justifyContent="center"
-            alignItems="center"
+            
             overflowY="auto"
             bg="#f6f4fa"
           >
