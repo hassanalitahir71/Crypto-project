@@ -15,7 +15,7 @@ const Support = () => {
     <>
       <DashBoardLayout title="Support">
         <Box h="480" w="780px" justifyContent="center" alignItems="center">
-          <Stack gap="75px">
+          <Stack gap="75px" alignItems="center">
             <Flex
               direction={{
                 base: "column",

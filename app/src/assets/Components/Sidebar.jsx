@@ -10,7 +10,7 @@ const SideBar = () => {
   ];
 
   return (
-    <Stack justifyContent="space-between" w="16rem" h="100vh">
+    <Stack justifyContent="space-between" w="16rem" h="100vh" >
       <Box>
         <Heading
           as="h1"
