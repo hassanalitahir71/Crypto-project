@@ -15,18 +15,45 @@ import { LuArrowDownToLine, LuArrowUpToLine } from "react-icons/lu";
 const PortfolioSection = () => {
   return (
     <>
-      <HStack
-
-        h="106px"
-        W="800px"
-        gap="105px"
+      <Flex
+        flexDir={{
+          base: "column",
+          md: "column",
+          lg: "row",
+        }}
+        h={{
+          base: "345px",
+          md: "345px",
+          lg: "106px",
+        }}
+        w={{
+          base: "400px",
+          md: "400px",
+          lg: "824px",
+        }}
+        gap={{
+          base: "70px",
+          md: "70px",
+          lg: "105px",
+        }}
         borderRadius="16px"
         align="Center"
-        flex="row"
+        justifyContent="center"
         bg="white"
       >
         <Box ml="35px">
-          <HStack gap="30px">
+          <Flex
+            gap={{
+              base: "10px",
+              md: "10px",
+              lg: "30px",
+            }}
+            flexDir={{
+              base: "column",
+              md: "column",
+              lg: "row",
+            }}
+          >
             <Stack gap="3">
               <HStack gap="1">
                 <Text color="#535D66" fontSize="12px" fontWeight="500 ">
@@ -89,9 +116,9 @@ const PortfolioSection = () => {
                 </Text>
               </HStack>
             </Stack>
-          </HStack>
+          </Flex>
         </Box>
-        <Box mr="24px"  mb="25px">
+        <Box mr="24px" mb="25px">
           <HStack gap="8px">
             <Button
               bg="#5F00D9"
@@ -141,7 +168,7 @@ const PortfolioSection = () => {
             </Button>
           </HStack>
         </Box>
-      </HStack>
+      </Flex>
     </>
   );
 };
